@@ -29,6 +29,10 @@ class TitleViewController: BaseViewController {
         super.viewDidLoad()
     }
 
+    deinit {
+        print("deinit", self)
+    }
+
     override func configureView() {
         super.configureView()
 

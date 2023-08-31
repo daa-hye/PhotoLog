@@ -35,7 +35,7 @@ extension URLSessionViewController: URLSessionDataDelegate {
 
     // 서버에서 데이터 받을 때마다 반복적으로 호출
     func urlSession(_ session: URLSession, dataTask: URLSessionDataTask, didReceive data: Data) {
-        print("data:", data)
+        //print("data:", data)
     }
 
     //서버에서 응답이 완료가 된 이후에 호출

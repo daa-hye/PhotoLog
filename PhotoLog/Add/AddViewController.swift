@@ -34,6 +34,10 @@ class AddViewController: BaseViewController {
         APIService.shared.request()
     }
 
+    deinit {
+        print("deinit", self)
+    }
+
     override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(animated)
         print(#function)
@@ -85,8 +89,11 @@ class AddViewController: BaseViewController {
     }
 
     @objc func dateButtonClicked() {
-        let vc = DateViewController()
-        vc.delegate = self
+//        let vc = DateViewController()
+//        vc.delegate = self
+//        navigationController?.pushViewController(vc, animated: true)
+
+        let vc = HomeViewController()
         navigationController?.pushViewController(vc, animated: true)
     }
 

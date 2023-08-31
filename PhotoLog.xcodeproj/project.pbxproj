@@ -31,6 +31,8 @@
 		5326A5CC2A9DC75A00A8BD4B /* WebViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5326A5CB2A9DC75A00A8BD4B /* WebViewController.swift */; };
 		5326A5D82A9EC74400A8BD4B /* APIService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5326A5D72A9EC74400A8BD4B /* APIService.swift */; };
 		5326A5DC2A9EEBD200A8BD4B /* URLSessionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5326A5DB2A9EEBD200A8BD4B /* URLSessionViewController.swift */; };
+		5326A5DF2AA01A6F00A8BD4B /* HomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5326A5DE2AA01A6F00A8BD4B /* HomeView.swift */; };
+		5326A5E12AA01A7900A8BD4B /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5326A5E02AA01A7900A8BD4B /* HomeViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -89,6 +91,8 @@
 		5326A5CB2A9DC75A00A8BD4B /* WebViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WebViewController.swift; sourceTree = "<group>"; };
 		5326A5D72A9EC74400A8BD4B /* APIService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIService.swift; sourceTree = "<group>"; };
 		5326A5DB2A9EEBD200A8BD4B /* URLSessionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = URLSessionViewController.swift; sourceTree = "<group>"; };
+		5326A5DE2AA01A6F00A8BD4B /* HomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeView.swift; sourceTree = "<group>"; };
+		5326A5E02AA01A7900A8BD4B /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -125,6 +129,7 @@
 		5326A5432A9C1D8400A8BD4B /* PhotoLog */ = {
 			isa = PBXGroup;
 			children = (
+				5326A5DD2AA01A5D00A8BD4B /* Home */,
 				5326A5D62A9EC73200A8BD4B /* Network */,
 				5326A5752A9D7BC200A8BD4B /* Extension */,
 				5326A5632A9C2FCC00A8BD4B /* Add */,
@@ -205,6 +210,15 @@
 				5326A5DB2A9EEBD200A8BD4B /* URLSessionViewController.swift */,
 			);
 			path = Network;
+			sourceTree = "<group>";
+		};
+		5326A5DD2AA01A5D00A8BD4B /* Home */ = {
+			isa = PBXGroup;
+			children = (
+				5326A5DE2AA01A6F00A8BD4B /* HomeView.swift */,
+				5326A5E02AA01A7900A8BD4B /* HomeViewController.swift */,
+			);
+			path = Home;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -312,6 +326,7 @@
 				5326A5C82A9DBB4600A8BD4B /* ContentViewController.swift in Sources */,
 				5326A5602A9C274B00A8BD4B /* SearchViewController.swift in Sources */,
 				5326A5692A9C365E00A8BD4B /* BaseCollectionViewCell.swift in Sources */,
+				5326A5E12AA01A7900A8BD4B /* HomeViewController.swift in Sources */,
 				5326A57D2A9D8E9300A8BD4B /* DateFormatter+Extension.swift in Sources */,
 				5326A5492A9C1D8400A8BD4B /* AddViewController.swift in Sources */,
 				5326A57B2A9D7DC400A8BD4B /* DateViewController.swift in Sources */,
@@ -320,6 +335,7 @@
 				5326A5DC2A9EEBD200A8BD4B /* URLSessionViewController.swift in Sources */,
 				5326A5672A9C337400A8BD4B /* SearchView.swift in Sources */,
 				5326A5622A9C2EBD00A8BD4B /* BaseView.swift in Sources */,
+				5326A5DF2AA01A6F00A8BD4B /* HomeView.swift in Sources */,
 				5326A5CC2A9DC75A00A8BD4B /* WebViewController.swift in Sources */,
 				5326A5452A9C1D8400A8BD4B /* AppDelegate.swift in Sources */,
 				5326A5472A9C1D8400A8BD4B /* SceneDelegate.swift in Sources */,
