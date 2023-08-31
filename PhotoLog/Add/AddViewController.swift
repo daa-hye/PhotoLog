@@ -14,7 +14,7 @@ protocol PassDataDelegate {
 }
 
 protocol PassImageDelegate {
-    func receiveImage(image: String)
+    func receiveImage(image: URL)
 }
 
 class AddViewController: BaseViewController {
@@ -73,7 +73,9 @@ class AddViewController: BaseViewController {
             self.present(picker, animated: true)
         }
         let web = UIAlertAction(title: "웹에서 가져오기", style: .default) { _ in
-            self.present(SearchViewController(), animated: true)
+            let vc = SearchViewController()
+            vc.delegate = self
+            self.present(vc, animated: true)
         }
         let cancel = UIAlertAction(title: "취소", style: .cancel)
 
@@ -148,8 +150,8 @@ extension AddViewController: PassDataDelegate, PassImageDelegate {
         mainView.dateButton.setTitle(DateFormatter.convertDate(date: date), for: .normal)
     }
 
-    func receiveImage(image: String) {
-        mainView.photoImageView.image = UIImage(systemName: image)
+    func receiveImage(image: URL) {
+        mainView.photoImageView.kf.setImage(with: image)
     }
 
 }
