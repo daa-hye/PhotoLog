@@ -20,7 +20,49 @@
 		5326A5672A9C337400A8BD4B /* SearchView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5326A5662A9C337400A8BD4B /* SearchView.swift */; };
 		5326A5692A9C365E00A8BD4B /* BaseCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5326A5682A9C365E00A8BD4B /* BaseCollectionViewCell.swift */; };
 		5326A56B2A9C37EF00A8BD4B /* SearchCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5326A56A2A9C37EF00A8BD4B /* SearchCollectionViewCell.swift */; };
+		5326A5772A9D7BDA00A8BD4B /* Notification+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5326A5762A9D7BDA00A8BD4B /* Notification+Extension.swift */; };
+		5326A5792A9D7C7900A8BD4B /* DateView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5326A5782A9D7C7900A8BD4B /* DateView.swift */; };
+		5326A57B2A9D7DC400A8BD4B /* DateViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5326A57A2A9D7DC400A8BD4B /* DateViewController.swift */; };
+		5326A57D2A9D8E9300A8BD4B /* DateFormatter+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5326A57C2A9D8E9300A8BD4B /* DateFormatter+Extension.swift */; };
+		5326A5C22A9D9BE200A8BD4B /* SeSACPhotoFramework.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5326A5BE2A9D9BCE00A8BD4B /* SeSACPhotoFramework.framework */; };
+		5326A5C32A9D9BE200A8BD4B /* SeSACPhotoFramework.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 5326A5BE2A9D9BCE00A8BD4B /* SeSACPhotoFramework.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		5326A5C62A9DB54B00A8BD4B /* TitleViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5326A5C52A9DB54B00A8BD4B /* TitleViewController.swift */; };
+		5326A5C82A9DBB4600A8BD4B /* ContentViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5326A5C72A9DBB4600A8BD4B /* ContentViewController.swift */; };
+		5326A5CC2A9DC75A00A8BD4B /* WebViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5326A5CB2A9DC75A00A8BD4B /* WebViewController.swift */; };
+		5326A5D82A9EC74400A8BD4B /* APIService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5326A5D72A9EC74400A8BD4B /* APIService.swift */; };
+		5326A5DC2A9EEBD200A8BD4B /* URLSessionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5326A5DB2A9EEBD200A8BD4B /* URLSessionViewController.swift */; };
 /* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		5326A5BD2A9D9BCE00A8BD4B /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 5326A5B82A9D9BCE00A8BD4B /* SeSACPhotoFramework.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 5326A5882A9D92AD00A8BD4B;
+			remoteInfo = SeSACPhotoFramework;
+		};
+		5326A5BF2A9D9BCE00A8BD4B /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 5326A5B82A9D9BCE00A8BD4B /* SeSACPhotoFramework.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 5326A5922A9D92AD00A8BD4B;
+			remoteInfo = SeSACPhotoFrameworkTests;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		5326A5C42A9D9BE200A8BD4B /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				5326A5C32A9D9BE200A8BD4B /* SeSACPhotoFramework.framework in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
 		5326A5412A9C1D8400A8BD4B /* PhotoLog.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PhotoLog.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -37,6 +79,16 @@
 		5326A5662A9C337400A8BD4B /* SearchView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchView.swift; sourceTree = "<group>"; };
 		5326A5682A9C365E00A8BD4B /* BaseCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseCollectionViewCell.swift; sourceTree = "<group>"; };
 		5326A56A2A9C37EF00A8BD4B /* SearchCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchCollectionViewCell.swift; sourceTree = "<group>"; };
+		5326A5762A9D7BDA00A8BD4B /* Notification+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Notification+Extension.swift"; sourceTree = "<group>"; };
+		5326A5782A9D7C7900A8BD4B /* DateView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DateView.swift; sourceTree = "<group>"; };
+		5326A57A2A9D7DC400A8BD4B /* DateViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DateViewController.swift; sourceTree = "<group>"; };
+		5326A57C2A9D8E9300A8BD4B /* DateFormatter+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "DateFormatter+Extension.swift"; sourceTree = "<group>"; };
+		5326A5B82A9D9BCE00A8BD4B /* SeSACPhotoFramework.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = SeSACPhotoFramework.xcodeproj; path = ../SeSACPhotoFramework/SeSACPhotoFramework.xcodeproj; sourceTree = "<group>"; };
+		5326A5C52A9DB54B00A8BD4B /* TitleViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TitleViewController.swift; sourceTree = "<group>"; };
+		5326A5C72A9DBB4600A8BD4B /* ContentViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentViewController.swift; sourceTree = "<group>"; };
+		5326A5CB2A9DC75A00A8BD4B /* WebViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WebViewController.swift; sourceTree = "<group>"; };
+		5326A5D72A9EC74400A8BD4B /* APIService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIService.swift; sourceTree = "<group>"; };
+		5326A5DB2A9EEBD200A8BD4B /* URLSessionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = URLSessionViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -44,6 +96,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				5326A5C22A9D9BE200A8BD4B /* SeSACPhotoFramework.framework in Frameworks */,
 				5326A55A2A9C1E1E00A8BD4B /* SnapKit in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -54,8 +107,10 @@
 		5326A5382A9C1D8400A8BD4B = {
 			isa = PBXGroup;
 			children = (
+				5326A5B82A9D9BCE00A8BD4B /* SeSACPhotoFramework.xcodeproj */,
 				5326A5432A9C1D8400A8BD4B /* PhotoLog */,
 				5326A5422A9C1D8400A8BD4B /* Products */,
+				5326A5C12A9D9BE200A8BD4B /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -70,6 +125,8 @@
 		5326A5432A9C1D8400A8BD4B /* PhotoLog */ = {
 			isa = PBXGroup;
 			children = (
+				5326A5D62A9EC73200A8BD4B /* Network */,
+				5326A5752A9D7BC200A8BD4B /* Extension */,
 				5326A5632A9C2FCC00A8BD4B /* Add */,
 				5326A55E2A9C272200A8BD4B /* Search */,
 				5326A55B2A9C23E900A8BD4B /* Base */,
@@ -78,6 +135,7 @@
 				5326A54D2A9C1D8500A8BD4B /* Assets.xcassets */,
 				5326A54F2A9C1D8500A8BD4B /* LaunchScreen.storyboard */,
 				5326A5522A9C1D8500A8BD4B /* Info.plist */,
+				5326A5CB2A9DC75A00A8BD4B /* WebViewController.swift */,
 			);
 			path = PhotoLog;
 			sourceTree = "<group>";
@@ -107,8 +165,46 @@
 			children = (
 				5326A5482A9C1D8400A8BD4B /* AddViewController.swift */,
 				5326A5642A9C2FF200A8BD4B /* AddView.swift */,
+				5326A5782A9D7C7900A8BD4B /* DateView.swift */,
+				5326A57A2A9D7DC400A8BD4B /* DateViewController.swift */,
+				5326A5C52A9DB54B00A8BD4B /* TitleViewController.swift */,
+				5326A5C72A9DBB4600A8BD4B /* ContentViewController.swift */,
 			);
 			path = Add;
+			sourceTree = "<group>";
+		};
+		5326A5752A9D7BC200A8BD4B /* Extension */ = {
+			isa = PBXGroup;
+			children = (
+				5326A5762A9D7BDA00A8BD4B /* Notification+Extension.swift */,
+				5326A57C2A9D8E9300A8BD4B /* DateFormatter+Extension.swift */,
+			);
+			path = Extension;
+			sourceTree = "<group>";
+		};
+		5326A5B92A9D9BCE00A8BD4B /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				5326A5BE2A9D9BCE00A8BD4B /* SeSACPhotoFramework.framework */,
+				5326A5C02A9D9BCE00A8BD4B /* SeSACPhotoFrameworkTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		5326A5C12A9D9BE200A8BD4B /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		5326A5D62A9EC73200A8BD4B /* Network */ = {
+			isa = PBXGroup;
+			children = (
+				5326A5D72A9EC74400A8BD4B /* APIService.swift */,
+				5326A5DB2A9EEBD200A8BD4B /* URLSessionViewController.swift */,
+			);
+			path = Network;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -121,6 +217,7 @@
 				5326A53D2A9C1D8400A8BD4B /* Sources */,
 				5326A53E2A9C1D8400A8BD4B /* Frameworks */,
 				5326A53F2A9C1D8400A8BD4B /* Resources */,
+				5326A5C42A9D9BE200A8BD4B /* Embed Frameworks */,
 			);
 			buildRules = (
 			);
@@ -163,12 +260,35 @@
 			);
 			productRefGroup = 5326A5422A9C1D8400A8BD4B /* Products */;
 			projectDirPath = "";
+			projectReferences = (
+				{
+					ProductGroup = 5326A5B92A9D9BCE00A8BD4B /* Products */;
+					ProjectRef = 5326A5B82A9D9BCE00A8BD4B /* SeSACPhotoFramework.xcodeproj */;
+				},
+			);
 			projectRoot = "";
 			targets = (
 				5326A5402A9C1D8400A8BD4B /* PhotoLog */,
 			);
 		};
 /* End PBXProject section */
+
+/* Begin PBXReferenceProxy section */
+		5326A5BE2A9D9BCE00A8BD4B /* SeSACPhotoFramework.framework */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.framework;
+			path = SeSACPhotoFramework.framework;
+			remoteRef = 5326A5BD2A9D9BCE00A8BD4B /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		5326A5C02A9D9BCE00A8BD4B /* SeSACPhotoFrameworkTests.xctest */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.cfbundle;
+			path = SeSACPhotoFrameworkTests.xctest;
+			remoteRef = 5326A5BF2A9D9BCE00A8BD4B /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+/* End PBXReferenceProxy section */
 
 /* Begin PBXResourcesBuildPhase section */
 		5326A53F2A9C1D8400A8BD4B /* Resources */ = {
@@ -187,16 +307,25 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				5326A5772A9D7BDA00A8BD4B /* Notification+Extension.swift in Sources */,
 				5326A5652A9C2FF200A8BD4B /* AddView.swift in Sources */,
+				5326A5C82A9DBB4600A8BD4B /* ContentViewController.swift in Sources */,
 				5326A5602A9C274B00A8BD4B /* SearchViewController.swift in Sources */,
 				5326A5692A9C365E00A8BD4B /* BaseCollectionViewCell.swift in Sources */,
+				5326A57D2A9D8E9300A8BD4B /* DateFormatter+Extension.swift in Sources */,
 				5326A5492A9C1D8400A8BD4B /* AddViewController.swift in Sources */,
+				5326A57B2A9D7DC400A8BD4B /* DateViewController.swift in Sources */,
 				5326A55D2A9C242400A8BD4B /* BaseViewController.swift in Sources */,
+				5326A5792A9D7C7900A8BD4B /* DateView.swift in Sources */,
+				5326A5DC2A9EEBD200A8BD4B /* URLSessionViewController.swift in Sources */,
 				5326A5672A9C337400A8BD4B /* SearchView.swift in Sources */,
 				5326A5622A9C2EBD00A8BD4B /* BaseView.swift in Sources */,
+				5326A5CC2A9DC75A00A8BD4B /* WebViewController.swift in Sources */,
 				5326A5452A9C1D8400A8BD4B /* AppDelegate.swift in Sources */,
 				5326A5472A9C1D8400A8BD4B /* SceneDelegate.swift in Sources */,
 				5326A56B2A9C37EF00A8BD4B /* SearchCollectionViewCell.swift in Sources */,
+				5326A5D82A9EC74400A8BD4B /* APIService.swift in Sources */,
+				5326A5C62A9DB54B00A8BD4B /* TitleViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

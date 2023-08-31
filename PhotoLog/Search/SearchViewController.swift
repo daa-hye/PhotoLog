@@ -11,6 +11,8 @@ class SearchViewController: BaseViewController {
 
     let mainView = SearchView()
 
+    var delegate: PassImageDelegate?
+
     let imageList = ["pencil", "star", "person", "star.fill", "xmark", "person.circle"]
 
     override func loadView() {
@@ -22,6 +24,10 @@ class SearchViewController: BaseViewController {
 
         //addObserver보다 post가 먼저 신호를 보내서 작동이 안되는 코드
         NotificationCenter.default.addObserver(self, selector: #selector(recommandKeywordNotificationObserver), name: NSNotification.Name("RecommandKeyword"), object: nil)
+
+        mainView.searchBar.becomeFirstResponder()
+        mainView.searchBar.delegate = self
+
     }
 
     @objc func recommandKeywordNotificationObserver(notification: NSNotification) {
@@ -55,9 +61,18 @@ extension SearchViewController: UICollectionViewDelegate, UICollectionViewDataSo
 
         print(imageList[indexPath.item])
 
-        NotificationCenter.default.post(name: NSNotification.Name("SelectImage"), object: nil, userInfo: ["name": imageList[indexPath.item], "sample":"고래밥"])
+        delegate?.receiveImage(image: imageList[indexPath.item])
+        //NotificationCenter를 통한 값전달
+//        NotificationCenter.default.post(name: NSNotification.Name("SelectImage"), object: nil, userInfo: ["name": imageList[indexPath.item], "sample":"고래밥"])
 
         dismiss(animated: true)
     }
 
+}
+
+extension SearchViewController: UISearchBarDelegate {
+
+    func searchBarSearchButtonClicked(_ searchBar: UISearchBar) {
+        mainView.searchBar.resignFirstResponder()
+    }
 }
