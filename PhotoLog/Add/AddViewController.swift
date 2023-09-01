@@ -13,7 +13,7 @@ protocol PassDataDelegate {
     func receiveDate(date: Date)
 }
 
-protocol PassImageDelegate {
+protocol PassImageDelegate: AnyObject {
     func receiveImage(image: URL)
 }
 
@@ -31,7 +31,7 @@ class AddViewController: BaseViewController {
         ClassOpenExample.publicExample()
         ClassPublicExample.publicExample()
         //ClassInternalExample.publicExample()
-        APIService.shared.request()
+        //APIService.shared.request(query: "sky")
     }
 
     deinit {

@@ -12,7 +12,7 @@ class SearchViewController: BaseViewController {
 
     let mainView = SearchView()
 
-    var delegate: PassImageDelegate?
+    weak var delegate: PassImageDelegate?
 
     var imageList: [URL] = []
 
@@ -80,7 +80,6 @@ extension SearchViewController: UISearchBarDelegate {
                 self?.imageList.append(url)
             }
             self?.mainView.collectionView.reloadData()
-            print(CFGetRetainCount(self))
         }
         mainView.searchBar.resignFirstResponder()
     }
