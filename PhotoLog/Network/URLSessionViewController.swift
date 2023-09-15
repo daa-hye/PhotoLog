@@ -17,7 +17,7 @@ class URLSessionViewController: UIViewController {
         didSet {
             let result = Double(buffer?.count ?? 0) / total
             progressLabel.text = "\(result * 100)"
-            print(result)
+            //print(result)
         }
     }
 

@@ -32,12 +32,18 @@ class HomeCollectionViewController: BaseViewController {
         cellRegistration = UICollectionView.CellRegistration(handler: { cell, indexPath, itemIdentifier in
             var content = UIListContentConfiguration.valueCell()
             guard let url = URL(string: itemIdentifier.urls.thumb) else { return }
+            let resource = KF.ImageResource(downloadURL: url)
 
-            self.downloadImage(with: url) { image in
-                content.image = image
+            KingfisherManager.shared.retrieveImage(with: resource) { result in
+
+                switch result{
+                case .success(let value):
+                    content.image = value.image
+                    cell.contentConfiguration = content
+                case .failure(let error):
+                    print(error)
+                }
             }
-
-            cell.contentConfiguration = content
         })
 
         APIService.shared.request(query: "sky") { [weak self] photo in
@@ -56,20 +62,6 @@ class HomeCollectionViewController: BaseViewController {
     override func configureView() {
         super.configureView()
 
-    }
-
-    func downloadImage(with url: URL, completionHandler: @escaping (UIImage) -> Void) {
-        let resource = KF.ImageResource(downloadURL: url)
-
-        KingfisherManager.shared.retrieveImage(with: resource){ result in
-
-            switch result{
-            case .success(let value):
-                completionHandler(value.image)
-            case .failure(let error):
-                print(error)
-            }
-        }
     }
 
 }
