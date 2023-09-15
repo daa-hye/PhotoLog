@@ -39,6 +39,7 @@
 		5326A5ED2AA0D07400A8BD4B /* APIKey.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5326A5EC2AA0D07400A8BD4B /* APIKey.swift */; };
 		5326A5EF2AA0D32600A8BD4B /* PhotoResult.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5326A5EE2AA0D32600A8BD4B /* PhotoResult.swift */; };
 		5326A5F22AA0D72000A8BD4B /* Kingfisher in Frameworks */ = {isa = PBXBuildFile; productRef = 5326A5F12AA0D72000A8BD4B /* Kingfisher */; };
+		53D5CD962AB46A560064CB3B /* HomeCollectionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 53D5CD952AB46A560064CB3B /* HomeCollectionViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -103,6 +104,7 @@
 		5326A5EA2AA0D05800A8BD4B /* .gitignore */ = {isa = PBXFileReference; lastKnownFileType = text; path = .gitignore; sourceTree = "<group>"; };
 		5326A5EC2AA0D07400A8BD4B /* APIKey.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIKey.swift; sourceTree = "<group>"; };
 		5326A5EE2AA0D32600A8BD4B /* PhotoResult.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhotoResult.swift; sourceTree = "<group>"; };
+		53D5CD952AB46A560064CB3B /* HomeCollectionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeCollectionViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -149,10 +151,10 @@
 				5326A55B2A9C23E900A8BD4B /* Base */,
 				5326A5442A9C1D8400A8BD4B /* AppDelegate.swift */,
 				5326A5462A9C1D8400A8BD4B /* SceneDelegate.swift */,
+				5326A5CB2A9DC75A00A8BD4B /* WebViewController.swift */,
 				5326A54D2A9C1D8500A8BD4B /* Assets.xcassets */,
 				5326A54F2A9C1D8500A8BD4B /* LaunchScreen.storyboard */,
 				5326A5522A9C1D8500A8BD4B /* Info.plist */,
-				5326A5CB2A9DC75A00A8BD4B /* WebViewController.swift */,
 				5326A5EA2AA0D05800A8BD4B /* .gitignore */,
 			);
 			path = PhotoLog;
@@ -233,6 +235,7 @@
 			children = (
 				5326A5DE2AA01A6F00A8BD4B /* HomeView.swift */,
 				5326A5E02AA01A7900A8BD4B /* HomeViewController.swift */,
+				53D5CD952AB46A560064CB3B /* HomeCollectionViewController.swift */,
 			);
 			path = Home;
 			sourceTree = "<group>";
@@ -365,6 +368,7 @@
 				5326A56B2A9C37EF00A8BD4B /* SearchCollectionViewCell.swift in Sources */,
 				5326A5EF2AA0D32600A8BD4B /* PhotoResult.swift in Sources */,
 				5326A5D82A9EC74400A8BD4B /* APIService.swift in Sources */,
+				53D5CD962AB46A560064CB3B /* HomeCollectionViewController.swift in Sources */,
 				5326A5C62A9DB54B00A8BD4B /* TitleViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
